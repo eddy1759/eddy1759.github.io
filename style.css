@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+:root {
+    /* Primary Colours */
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    /* Neutral Colours */
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    color: var(--Grayish-Blue);
+    
+}
+body {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-Blue);
+    margin-top: 10%;
+    margin-bottom: 50%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 30px; 
+    
+}
+
+main {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 50%;
+    margin-left: 15%;
+    margin-right: 10%;
+    padding-left: 30px;  */
+}
+
+main .container {
+    max-width: 450px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, 
+                rgba(17, 17,   26, 0.1) 0px 8px 24px, 
+                rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .container > h2, main .container > span {
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+    color: var(--Neon-Green)
+}
+
+main .container .display {
+    margin: 0.7rem 0;
+}
+
+main .container > img {
+    width: 100%;
+    height: auto;
+    margin: 0.2rem 0 0.7rem 0;
+}
+
+main .dice-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--Neon-Green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -55px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+main .dice-icon:active {
+    box-shadow: 0 0 20px var(--Neon-Green);
+    height: 55px;
+    width: 55px;
+}
+
+main .dice-icon img {
+    height: 20px;
+    width: auto;
+}
+
+
+
+  
+.attribution { 
+    display: flex;
+    font-size: 19px; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px; 
+}
+  
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    
+}
